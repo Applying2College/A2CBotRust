@@ -1,6 +1,7 @@
 use std::{collections::HashMap, env, fs::File, io::Read};
 
 use serde::{Deserialize, Serialize};
+use serenity::all::GuildId;
 use strum::Display;
 
 use crate::{mod_tools::slow_mode::SlowMode, utils::constants::setup_constants};
@@ -37,6 +38,7 @@ pub struct Config {
     pub commands: HashMap<Commands, CommandConfig>,
     #[serde(default)]
     pub token: String,
+    pub guild_id: GuildId
 }
 
 impl Config {

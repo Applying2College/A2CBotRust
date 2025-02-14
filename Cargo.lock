@@ -1361,6 +1361,7 @@ dependencies = [
  "anyhow",
  "clap",
  "dashmap 6.1.0",
+ "log",
  "serde",
  "serde_yml",
  "serenity",
